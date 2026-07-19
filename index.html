@@ -24,9 +24,6 @@
       </nav>
 
       <div class="hero-content">
-        <div class="hero-logo">
-          <img src="images/batman-logo.svg" alt="Batman Logo" />
-        </div>
         <p class="eyebrow">The Dark Knight</p>
         <h1>Gotham’s protector rises from the shadows.</h1>
         <p>
@@ -34,24 +31,49 @@
           villains who test him, and the allies who shape Gotham’s fate.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#history">Read the history</a>
-          <a class="button secondary" href="#heroes">Meet the characters</a>
+          <a class="button primary history-btn" href="#history">History</a>
+          <a class="button secondary characters-btn" href="#heroes">Characters</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="history" class="section">
+      <section id="history" class="section history-section">
         <h2>History of Batman</h2>
-        <p>
-          Batman’s story begins with one of the most tragic events in comic book history: the murder of Bruce Wayne’s parents, Thomas and Martha Wayne, in a Gotham alley. That moment shattered Bruce’s childhood and forced him to confront the harsh truth that justice in Gotham was often broken, corrupt, and incomplete. Instead of allowing grief to define him, Bruce chose to transform pain into purpose. He trained himself to become a master detective, expert martial artist, and fearless strategist. His mission was never simply to punish criminals, but to create a city where fear of wrongdoing could replace the fear of chaos.
-        </p>
-        <p>
-          Over the years, Batman grew from a lone vigilante into a global symbol of resilience, discipline, and moral conviction. He has fought not only physical enemies but also the darkness inside himself, facing guilt, loss, and the constant temptation to become as brutal as the criminals he hunts. That inner struggle is one reason Batman remains so compelling. He is not a perfect hero, but he is a deeply human one—someone who keeps going even when the odds are overwhelming. In Gotham, where corruption runs deep and hope is fragile, Batman stands as a reminder that courage can survive even in the darkest night.
-        </p>
-        <p>
-          Bruce Wayne became Batman after the tragic death of his parents, Thomas and Martha Wayne, in Gotham’s streets. That event shaped his life and pushed him to take action. He chose to become Batman not only to fight crime, but to protect Gotham City from the fear, corruption, and violence that had taken so much from its people. His mission is to defend the innocent, inspire hope, and stand as a symbol of justice when the city itself seems broken.
-        </p>
+
+        <div class="history-grid">
+          <article class="history-card">
+            <h3><span class="history-icon">🦇</span> Origin & Tragedy</h3>
+            <p>
+              Batman’s story begins with one of the most tragic events in comic book history: the murder of Bruce Wayne’s parents, Thomas and Martha Wayne, in a Gotham alley.
+            </p>
+            <p>
+              That moment shattered Bruce’s childhood and forced him to confront the harsh truth that justice in Gotham was often broken, corrupt, and incomplete.
+            </p>
+            <p>
+              Instead of allowing grief to define him, Bruce chose to transform pain into purpose. He trained himself to become a master detective, expert martial artist, and fearless strategist.
+            </p>
+          </article>
+
+          <article class="history-card">
+            <h3><span class="history-icon">🛡️</span> Building the Myth</h3>
+            <p>
+              Over the years, Batman grew from a lone vigilante into a global symbol of resilience, discipline, and moral conviction. He has fought not only physical enemies but also the darkness inside himself.
+            </p>
+            <p>
+              That inner struggle is one reason Batman remains so compelling: he is not a perfect hero, but a deeply human one committed to standing against chaos.
+            </p>
+          </article>
+
+        </div>
+
+        <aside class="history-callout">
+          <p class="callout-title">Key Quote</p>
+          <blockquote>
+            “It’s not who I am underneath, but what I do that defines me.”
+          </blockquote>
+          <p class="callout-note">This line captures Batman’s relentless focus on action over identity, a central theme throughout his history.</p>
+        </aside>
       </section>
 
       <section id="heroes" class="section">
@@ -90,31 +112,25 @@
             <a class="page-link" href="villains/joker.html">Read more</a>
           </article>
           <article class="character-card">
-            <img src="images/riddler.svg" alt="The Riddler" />
+            <img src="images/riddler.jpg" alt="The Riddler" />
             <h3>The Riddler</h3>
             <p>The Riddler uses intelligence, puzzles, and mind games to challenge Batman’s detective skills and expose Gotham’s secrets.</p>
             <a class="page-link" href="villains/riddler.html">Read more</a>
           </article>
           <article class="character-card">
-            <img src="images/two-face.svg" alt="Two-Face" />
+            <img src="images/two-face.jpg" alt="Two-Face" />
             <h3>Two-Face</h3>
             <p>Harvey Dent was once Gotham’s shining district attorney, but after a tragic accident, he became Two-Face, a symbol of how trauma and corruption can break even the strongest mind.</p>
             <a class="page-link" href="villains/two-face.html">Read more</a>
           </article>
           <article class="character-card">
-            <img src="images/penguin.svg" alt="The Penguin" />
+            <img src="images/penguin.jpg" alt="The Penguin" />
             <h3>The Penguin</h3>
             <p>The Penguin is a cunning criminal who uses influence, intimidation, and Gotham’s underworld to gain power and control.</p>
             <a class="page-link" href="villains/penguin.html">Read more</a>
           </article>
           <article class="character-card">
-            <img src="images/scarecrow.svg" alt="Scarecrow" />
-            <h3>Scarecrow</h3>
-            <p>Jonathan Crane, better known as Scarecrow, weaponizes fear through toxins that twist the mind. His strength lies in making people confront the very terror they dread most.</p>
-            <a class="page-link" href="villains/scarecrow.html">Read more</a>
-          </article>
-          <article class="character-card">
-            <img src="images/bane.svg" alt="Bane" />
+            <img src="images/bane.jpg" alt="Bane" />
             <h3>Bane</h3>
             <p>Bane is a physically imposing and highly intelligent adversary who uses a strength-enhancing drug (Venom) and brutal tactics. He is famous for the "Knightfall" story where he broke Batman's back, proving himself a strategic and fearsome opponent.</p>
             <a class="page-link" href="villains/bane.html">Read more</a>
@@ -126,27 +142,32 @@
       <section id="extras" class="section alt-section">
         <h2>Vehicles, Suit, and Famous Batman Movies</h2>
         <div class="character-grid">
-          <article class="character-card">
-            <img src="images/vehicles/batmobile.svg" alt="Batmobile" />
+          <article class="character-card vehicle-card batmobile-card">
+            <div class="card-icon" aria-hidden="true">🏎️</div>
+            <img src="images/vehicles/batmobile.jpg" alt="Batmobile" />
             <h3>Batmobile</h3>
             <p>The Batmobile is Batman’s most famous vehicle, known for its heavy armor, powerful engine, and intimidating design. It is used to patrol Gotham’s streets and chase down criminals at incredible speed.</p>
           </article>
-          <article class="character-card">
-            <img src="images/vehicles/batcycle.svg" alt="Batcycle" />
+          <article class="character-card vehicle-card batcycle-card">
+            <div class="card-icon" aria-hidden="true">🏍️</div>
+            <img src="images/vehicles/batcycle.jpg" alt="Batcycle" />
             <h3>Batcycle</h3>
             <p>The Batcycle is a fast, agile machine built for quick movement through Gotham’s tight streets and rooftops. It highlights Batman’s tactical style and his need to move fast without being seen.</p>
           </article>
-          <article class="character-card">
-            <img src="images/vehicles/batplane.svg" alt="Batplane" />
+          <article class="character-card vehicle-card batplane-card">
+            <div class="card-icon" aria-hidden="true">🛩️</div>
+            <img src="images/vehicles/batplane.jpg" alt="Batplane" />
             <h3>Batplane</h3>
             <p>The Batplane is one of Batman’s most iconic aerial machines, allowing him to travel long distances and reach distant threats with precision and speed.</p>
           </article>
-          <article class="character-card">
+          <article class="character-card vehicle-card suit-card">
+            <div class="card-icon" aria-hidden="true">🦺</div>
             <img src="images/suit.svg" alt="Batman suit" />
             <h3>Batman Suit</h3>
             <p>Batman’s suit is a symbol of fear, power, and justice. Designed for protection and intimidation, it gives him the image of a dark knight while allowing him to operate as a high-tech vigilante.</p>
           </article>
-          <article class="character-card">
+          <article class="character-card vehicle-card movies-card">
+            <div class="card-icon" aria-hidden="true">🎬</div>
             <h3>Famous Batman Movies</h3>
             <p>Batman has appeared in many legendary films, including The Dark Knight, Batman Begins, The Dark Knight Rises, and Joker. These movies explore different sides of Gotham’s protector and the city he fights to save.</p>
           </article>
@@ -157,17 +178,17 @@
           <article class="character-card">
             <h3>Batman Vehicles</h3>
             <p>Explore the Batmobile, Tumbler, Batcycle, Batwing, Batboat, and Batpod in a full guide to Gotham’s legendary machines.</p>
-            <a class="page-link" href="vehicles/index.html">View vehicles</a>
+            <a class="page-link" href="vehicles/index.html">Explore Vehicles</a>
           </article>
           <article class="character-card">
             <h3>Batman Movies</h3>
             <p>See Batman films in release order with short summaries and main cast details.</p>
-            <a class="page-link" href="movies.html">View movies</a>
+            <a class="page-link" href="movies.html">Explore Movies</a>
           </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section facts-section">
         <h2>Interesting Facts About Batman</h2>
         <div class="character-grid">
           <article class="character-card">
@@ -176,32 +197,32 @@
             <p>He first appeared in Detective Comics #27 and became one of the first superhero icons ever created.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">1.5</div>
+            <div class="villain-icon">2</div>
             <h3>Created by Bob Kane and Bill Finger</h3>
-            <p>Batman was created by artist Bob Kane and writer Bill Finger, with significant contributions from artist Jerry Robinson. Finger is credited with designing the iconic cape, cowl, and brooding personality that define Batman today.</p>
+            <p>Finger is credited with designing the iconic cape, cowl, and brooding personality that define Batman today.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">2</div>
+            <div class="villain-icon">3</div>
             <h3>His real name is Bruce Wayne</h3>
             <p>Bruce Wayne is not only a billionaire but also a brilliant detective, strategist, and martial artist.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">3</div>
+            <div class="villain-icon">4</div>
             <h3>He has no superpowers</h3>
             <p>Batman relies on training, gadgets, intelligence, and fearlessness rather than powers from mutation or magic.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">4</div>
+            <div class="villain-icon">5</div>
             <h3>Gotham is inspired by New York</h3>
             <p>Batman’s city is influenced by the atmosphere and grit of New York City, especially during the 1930s and 1940s.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">5</div>
+            <div class="villain-icon">6</div>
             <h3>Batman has a very large rogues’ gallery</h3>
             <p>He has faced hundreds of villains over the years, making Gotham one of the richest comic-book settings ever created.</p>
           </article>
           <article class="character-card">
-            <div class="villain-icon">6</div>
+            <div class="villain-icon">7</div>
             <h3>He is often called the World’s Greatest Detective</h3>
             <p>Batman’s detective skills are as famous as his combat abilities, and many stories focus on his sharp logic and investigation skills.</p>
           </article>
